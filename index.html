@@ -649,7 +649,7 @@
         // ─── Referral link ─────────────────────────────────────────────────
         function copyReferralLink() {
             const botUser = appConfig.botUsername || 'bdinkam01_bot';
-            const link = `https://t.me/${botUser}?startapp=${telegramUser?.id || 'user'}`;
+            const link = `https://t.me/${botUser}/startup?startapp=${telegramUser?.id || 'user'}`;
             navigator.clipboard.writeText(link).then(() => {
                 tg.showAlert('Referral link copied!');
             }).catch(() => {
